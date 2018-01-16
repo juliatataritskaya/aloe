@@ -1,4 +1,33 @@
 (function ($) {
+    $(document).ready(function() {
+        $('#products-slider').owlCarousel({
+            loop: true,
+            margin: 20,
+            dots: false,
+            nav: true,
+            navText: [
+                "<i class='fa fa-2x fa-angle-left'></i>",
+                "<i class='fa fa-2x fa-angle-right'></i>"
+            ],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+    });
 
 	new WOW().init();
 
