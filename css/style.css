@@ -323,20 +323,25 @@ hr {
 ============================ */
 
 .intro {
-	width:100%;
-	position:relative;
-	background: url(../img/bg1.jpg) no-repeat top center;
+    width:100%;
+    position:relative;
+    /* background: url(../img/bg1.jpg) no-repeat top center; */
     background-size: cover;
     height: auto;
 }
 
-#intro.intro {
-	padding:20% 0 0 0;
+#intro>.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #45633f;
+    opacity: 0.75;
+    z-index: -1;
 }
 
 .intro .slogan {
-	text-align: center;
-
+    text-align: center;
+    padding: 20% 0 0 0;
 }
 
 .intro .page-scroll {
